@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".fragments.SendInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_customer"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/customer_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.098"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <EditText
+                    android:id="@+id/edit_customer_name"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/unique_customer_number"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_customer" />
+
+                <TextView
+                    android:id="@+id/tv_umerchant_number"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/unique_customer_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.132"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_customer_name" />
+
+                <EditText
+                    android:id="@+id/edit_umerchant_number"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/unique_customer_number"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_umerchant_number" />
+
+
+                <TextView
+                    android:id="@+id/tv_service_id"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/service_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.091"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_umerchant_number" />
+
+                <EditText
+                    android:id="@+id/edit_service_id"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/unique_customer_number"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_service_id" />
+
+
+                <TextView
+                    android:id="@+id/tv_cust_type"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Cust Type"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.089"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_service_id" />
+
+                <FrameLayout
+                    android:id="@+id/spin_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cust_type">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_combo"
+                        android:layout_gravity="right|center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_cust_type"
+                        style="@style/simpleEditText"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/edit_sample"
+                        android:hint="@string/unique_customer_number"
+                        android:text="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.454"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_cust_type"
+                        android:spinnerMode="dropdown"/>
+
+                </FrameLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_cust_attribute"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/customer_attribute"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spin_frame" />
+
+                <EditText
+                    android:id="@+id/edit_cust_attribute"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/unique_customer_number"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cust_attribute" />
+
+                <TextView
+                    android:id="@+id/tv_cust_phone"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/customer_phone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_cust_attribute" />
+
+                <EditText
+                    android:id="@+id/edit_cust_phone"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/unique_customer_number"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cust_phone" />
+
+                <TextView
+                    android:id="@+id/tv_cust_email"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/customer_email"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_cust_phone" />
+
+                <EditText
+                    android:id="@+id/edit_cust_email"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/unique_customer_number"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cust_email" />
+
+                <TextView
+                    android:id="@+id/tv_cust_employe_code"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/unique_employee_code"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_cust_email" />
+
+                <EditText
+                    android:id="@+id/edit_cust_employe_code"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/unique_customer_number"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cust_employe_code" />
+
+                <TextView
+                    android:id="@+id/tv_cust_employe_number"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/unique_employee_code"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_cust_employe_code" />
+
+                <EditText
+                    android:id="@+id/edit_cust_employe_number"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/unique_customer_number"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cust_employe_number" />
+
+                <TextView
+                    android:id="@+id/tv_oldclient_custNumber"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/unique_employee_code"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_cust_employe_number" />
+
+                <EditText
+                    android:id="@+id/edit_oldclient_custNumber"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/unique_customer_number"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_oldclient_custNumber" />
+
+                <TextView
+                    android:id="@+id/tv_addressLine1"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/addres1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_oldclient_custNumber" />
+
+                <EditText
+                    android:id="@+id/edit_addressLine1"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/unique_customer_number"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_addressLine1" />
+
+                <TextView
+                    android:id="@+id/tv_addressLine2"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/addres2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_addressLine1" />
+
+                <EditText
+                    android:id="@+id/edit_addressLine2"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/unique_customer_number"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_addressLine2" />
+
+
+                <TextView
+                    android:id="@+id/tv_country"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/coutry"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_addressLine2" />
+
+                <EditText
+                    android:id="@+id/edit_country"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/coutry"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_country" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    style="@style/simpleTextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/state"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.115"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_country" />
+
+                <EditText
+                    android:id="@+id/edit_state"
+                    style="@style/simpleEditText"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_sample"
+                    android:hint="@string/state"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_state" />
+
+                <Button
+                    android:id="@+id/button_eviar_info"
+                    android:layout_width="343dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_gray"
+                    android:text="@string/txt_enviar_info"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_state" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/common_google_signin_btn_text_dark_disabled">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>

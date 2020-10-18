@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">IlMedici Enrolamiento</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="app_version">Enrolamiento V1.0</string>
+    <string name="tituloHome">iDMission test</string>
+    <string name="txt_ine_front">Tomar frente INE</string>
+    <string name="txt_ine_back">Tomar reverso INE</string>
+    <string name="txt_ine_watch">Ver INE</string>
+    <string name="txt_selfie">Tomar foto de perfil</string>
+    <string name="txt_watch_selfie">Ver foto de perfil</string>
+    <string name="txt_enviar_info">Enviar Infromación</string>
+
+
+    <!-- Holders SendInfoFragment -->
+    <string name="customer_name">Customer name</string>
+    <string name="unique_customer_number">Unique Customer Number</string>
+    <string name="unique_merchant_Number">Unique Mechant Number</string>
+    <string name="service_id">Service Id</string>
+    <string name="customer_attribute">Customer Attribute</string>
+    <string name="customer_phone">Customer Phone</string>
+    <string name="customer_email">Customer Email</string>
+    <string name="unique_employee_code">Unique Employee Code</string>
+    <string name="unique_employee_number">Unique Employee Number</string>
+    <string name="oldclient_customer_number">Old Client Customer Number</string>
+    <string name="addres1">First Adress</string>
+    <string name="addres2">Second Adress 2</string>
+    <string name="coutry">Country</string>
+    <string name="state">State</string>
+
+    <!-- ShowIneFront -->
+    <string name="oficial_identity">Identificación oficial(INE o Pasaporte)</string>
+    <string name="reverse_ine">Reverso Ine</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- RegisterStart -->
+    <string name="name">Nombre</string>
+    <string name="second_name1">Apellido Paterno</string>
+    <string name="second_name2">Apellido Materno</string>
+    <string name="email">e-mail</string>
+    <string name="birthdat">Fecha de nacimiento</string>
+    <string name="gender">Genero</string>
+    <string name="rfc">RFC</string>
+    <string name="curp">CURP</string>
+    <string name="password">Contraseña</string>
+    <string name="password_repet">Repetir Contraseña</string>
+    <string name="cel">Teléfono</string>
+    <string name="sms_code">Código SMS</string>
+    <string name="women">Código SMS</string>
+    <string name="man">Código SMS</string>
+    <string name="swipe">Deslizar</string>
+    <string name="get_smscode">Solicitar código SMS</string>
+    <string name="register">Registrar</string>
+
+
+    <string name="validating">Hace falta el campo </string>
+    <string name="validating_password">Debe completar las contraseñas</string>
+    <string name="validating_password_password2">Las contraseñas deben de coincidir</string>
+
+</resources>

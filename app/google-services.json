@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "23494567452",
+    "firebase_url": "https://enrolamiento-1a5c3.firebaseio.com",
+    "project_id": "enrolamiento-1a5c3",
+    "storage_bucket": "enrolamiento-1a5c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23494567452:android:2919e9a8970d96627721d9",
+        "android_client_info": {
+          "package_name": "com.dan.almedici.enrolamiento"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23494567452-edkl8d91j6mmj7bu888b6j2gqkrrq0aq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dan.almedici.enrolamiento",
+            "certificate_hash": "4ce0ba563e5c521128c7d7a4713bdbfe186b59b6"
+          }
+        },
+        {
+          "client_id": "23494567452-tfqh6p0s9mvvcl8753ceraerrjt9k1v5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOoOc08bXnY-mzZ4toIFTwp1hqMSsHtQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23494567452-tfqh6p0s9mvvcl8753ceraerrjt9k1v5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

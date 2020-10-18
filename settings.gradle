@@ -1,0 +1,6 @@
+include ':OpenCV_4.1.1'
+include ':libjinglewrapper'
+include ':idm-imgproc-7.1.4.1'
+include ':card.io-5.4.0'
+include ':app'
+rootProject.name = "Enrolamiento"
